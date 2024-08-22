@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+}
+
+body {
+   font-family: "Quicksand", sans-serif;
+}
+
+#hero {
+    background: url("../images/header-image.jpg") no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.menu-options {
+    text-align: center;
+}
+
+.card {
+    margin-right: 10px;
+}
