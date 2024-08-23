@@ -17,7 +17,7 @@
 <body>
 <header>
     <div class="nav-container">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="#"><i class="fa-solid fa-bowl-food"> Savory Haven</i></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -25,7 +25,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-start align-items-start">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
@@ -39,8 +39,7 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                <button class="btn btn-outline-success bg-primary text-light" type="submit">Booking</button>
-                </form>
+                <a href="#contact"><button class="btn booking-btn btn-outline-success bg-primary text-light" type="submit">Booking</button></a>
             </div>
         </div>
     </nav>
@@ -81,7 +80,7 @@
                 <img src="/assets/images/pancakes.png" class="card-img-top" alt="Delicious plate of pancakes">
                 <div class="card-body">
                     <h5 class="card-title">Pancakes</h5>
-                    <p class="card-text">Fluffy pancakes serverd with maple syrup and fresh berries.</p>
+                    <p class="card-text">Fluffy pancakes served with maple syrup and fresh berries.</p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -135,7 +134,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="/assets/images/chocolate-lava-cake.jpg" class="card-img-top" alt="Chocolate Lava Cake">
+                <img src="../assets/images/chocolate-lava-cake.jpg" class="card-img-top" alt="Chocolate Lava Cake">
                 <div class="card-body">
                     <h5 class="card-title">Chocolate Lava Cake</h5>
                     <p class="card-text">Warm chocolate cake with a molten chocolate center.</p>
@@ -146,16 +145,19 @@
     </div>
     <div id="contact" class="contact mt-5">
     <h2 class="text-center">Contact Us</h2>
-    <img class="img-fluid" src="../images/plate-on-table.jpg" alt="plate-on-table">
-    <p class="mt-4">Reserve Your Table</p>
-        <form>
+    <div class="map d-flex justify-content-center align-items-center">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3510.6259223800034!2d-81.51888032642792!3d28.370157075808983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88dd7f876553421d%3A0x228e45fd5cc69e49!2s1486%20Buena%20Vista%20Dr%2C%20Orlando%2C%20FL%2032830!5e0!3m2!1sen!2sus!4v1724420244595!5m2!1sen!2sus"
+         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+        <p class="mt-4 text-center">Reserve Your Table</p>
+        <form class="w-25 mb-3 mx-auto">
             <div class="mb-3 form-floating">
                 <input type="text" class="form-control" id="floatingInput" placeholder="Full Name">
                 <label for="floatingInput">Full Name</label>
             </div>
 
             <div class="mb-3 form-floating">
-                <input type="email" class="form-control" id="floatingInputEmail1" aria-describedby="emailHelp" placeholder="Email" required>
+                <input type="email" class="form-control" id="floatingInputEmail1" placeholder="Email" required>
             <label for="floatingInputEmail1" class="form-label">Email address</label>
            </div>
            
@@ -172,8 +174,38 @@
             <button type="submit" class="btn btn-primary">Reserve Now</button>
         </form>
     </div>
-    <footer>
-        
+    <footer class="footer">
+        <div class="card text-center card-footer text-body-secondary">
+            <div>
+                <h2 class="ft-header"> <a href="#hero"></a><i class="fa-solid fa-bowl-food"> Savor Haven </i></h2>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title">Subscribe to our newsletter</h5>
+                <form>
+                <div class="w-25 mb-3 mx-auto d-flex flex-row form-floating subscribe">
+                    <input type="email" class="form-control" id="floatingInputEmail2" placeholder="Email" required>
+                    <label for="floatingInputEmail2" class="form-label">Email address</label>
+                    <button type="submit" class="btn email-btn btn-primary">Subscribe</button>
+                </div>
+            </form>
+            </div>
+                <div class="foot-nav" >
+                    <ul class=" me-auto mb-2 mb-lg-0 d-flex flex-row justify-content-center align-items-center">
+                        <li class="nav-item foot-nav">
+                            <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+                        </li>
+                        <li class="nav-item foot-nav">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </li>
+                        <li class="nav-item foot-nav">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+            </div>
+        </div>
+        <div class="copyright d-flex justify-content-center align-items-center mt-2">
+            &#169; 2024 Savory Haven
+        </div>
     </footer>
 </div>
 

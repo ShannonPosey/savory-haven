@@ -6,6 +6,17 @@ body {
    font-family: "Quicksand", sans-serif;
 }
 
+.container-fluid {
+    position: fixed;
+    background-color: #f0f0f0;
+    margin-top: 15px;
+    height: 80px;
+}
+
+.booking-btn {
+    margin-top: 15px;
+}
+
 #hero {
     background: url("../images/header-image.jpg") no-repeat;
     background-size: cover;
@@ -18,4 +29,27 @@ body {
 
 .card {
     margin-right: 10px;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.email-btn {
+    margin-left: 5px;
+}
+    
+
+.nav-item {
+    list-style-type: none;
+}
+
+.foot-nav {
+    padding-right: 15px;
 }
