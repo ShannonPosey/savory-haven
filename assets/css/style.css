@@ -18,8 +18,8 @@ body {
 }
 
 #hero {
-    background: url("/images/header-image.jpg") no-repeat;
-    background-size: cover;
+background-image: url(/images/header-image.jpg);
+background-size: cover;
     height: 500px;
 }
 
