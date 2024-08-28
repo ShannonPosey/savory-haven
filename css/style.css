@@ -18,7 +18,8 @@ body {
 }
 
 #hero {
-background: url("../images/header-image.jpg") no-repeat;
+/* background: url("../images/napkin-on-a-plate.jpg") center right no-repeat; */
+background: url("../images/napkinonaplate.jpg") center right no-repeat;
 background-size: cover;
 height: 500px;
 }
